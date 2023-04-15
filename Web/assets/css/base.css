@@ -17,6 +17,11 @@
     /* font-family: 'Roboto', sans-serif; */
 }
 
+*::selection {
+    background-color: var(--color-three);
+    color: var(--color-one);
+}
+
 /* ANIMATION */
 .zoom-in-out-icon {
     animation: zoom-in-zoom-out 3s ease infinite;
