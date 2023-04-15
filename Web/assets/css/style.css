@@ -1,3 +1,5 @@
+
+
 /*  NAVIGATION BAR  */
 /* ghi code tai day
 
@@ -8,12 +10,321 @@
 
 
 /*  SECTION 1  */
-/* ghi code tai day */
+.section-one {
+    position: relative;
+    background-image: url(/Web/assets/image/annam_auto_x2.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    width: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
 
+/* .darken-layer {
+    position: absolute;
+    background-color: #000;
+    opacity: 0.1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} */
 
+.section-one .content-wrapper {
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: var(--color-one);
+    max-width: 25rem;
+}
+
+.section-one .content-wrapper h1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.15rem;
+}
+
+.section-one .content-wrapper span {
+    display: flex;
+    font-size: 0.9rem;
+    letter-spacing: 0.08rem;
+    max-width: 18rem;
+    margin: 0.5rem 0rem;
+}
+
+.section-one .button-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.section-one .box-wrapper {
+    position: absolute;
+    background-color: var(--color-one);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto; 
+    margin-right: auto; 
+    bottom: -6.5vh;
+    border-radius: 15px;
+    box-shadow: 0 2px 48px 0 rgb(0 0 0 / 20%);
+    max-width: 80%;
+    overflow: hidden;
+}
+
+.section-one .recolor-text {
+    color: var(--color-three);
+}
+
+.section-one .box-wrapper a, .section-one .box-wrapper .language {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-two);
+}
+
+.section-one .box-wrapper .fa-location-dot {
+    color: var(--color-six);
+    display: flex;
+    align-self: center;
+    font-size: 1.8rem;
+    margin-left: 1.5rem;
+    transition: all 0.5s;
+}
+
+.section-one .box-wrapper .address:hover i {
+    cursor: pointer;
+    color: var(--color-five);
+}
+
+.section-one .box-wrapper .inner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.section-one .box-wrapper .inner-text p {
+    margin: 0;
+    padding: 0;
+}
+
+.section-one .box-wrapper .fa-calendar-days {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    margin-left: 1.5rem;
+    font-size: 2rem;
+    color: var(--color-six);
+    transition: all 0.5s;
+}
+
+.section-one .box-wrapper .date-link:hover .fa-calendar-days {
+    color: var(--color-five);
+}
+
+.section-one .box-wrapper .inner-wrap .date {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 0.95rem;
+    text-align: left;
+    color: var(--color-two);
+}
+
+.section-one .box-wrapper .language .fa-globe {
+    display: flex;
+    align-self: center;
+    margin-left: 1.2rem;
+    color: var(--color-six);
+    font-size: 1.8rem;
+    transition: all 0.5s;
+}
+
+.section-one .box-wrapper .language:hover .fa-globe {
+    color: var(--color-five);
+}
+
+.section-one .box-wrapper .smaller-text {
+    margin-bottom: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.section-one .box-wrapper .rating p  {
+    color: var(--color-two);
+}
+
+.section-one .box-wrapper .fa-star {
+    display: flex;
+    align-self: center;
+    margin-left: 1.5rem;
+    font-size: 1.8rem;
+    color: var(--color-six);
+    transition: all 0.5s;
+}
+
+.section-one .box-wrapper .rating:hover .fa-star {
+    color: var(--color-five);
+}
+
+.section-one .hover-style-1 {
+    text-align: left !important;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--color-five);
+    font-weight: bold;
+    box-shadow: inset 0 0 0 0 var(--color-five);
+    margin: 0 0rem;
+    padding: 0 0rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    border-radius: 15px;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+.section-one .hover-style-1:hover {
+    box-shadow: inset 10rem 0 0 0 var(--color-five);
+    color: white;
+    border-radius: 15px;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    cursor: pointer;
+}
 
 /*  Responsive  */
+@media (max-width: 991px) {
+    .section-one .content-wrapper, .section-one .content-wrapper span {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+        background: none;
+        text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+    }
 
+    .section-one .button-wrapper {
+        display: flex;
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .section-one .short-line {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .section-one .box-wrapper .restyle-select {
+        margin-top: 0;
+        margin-bottom: 0;
+     }
+
+    .section-one .box-wrapper {
+        bottom: -11vh;
+    }
+
+    .section-one .box-wrapper a {
+        margin-top: 1rem;
+    }
+
+    .section-one .box-wrapper .col-lg-2:nth-child(n+4) a {
+        margin-bottom: 1.2rem;
+    }
+
+    .section-one .hover-style-1 {
+        font-size: 1rem;
+    }
+
+    #google_translate_element { 
+        height: 16px !important;
+        overflow: hidden !important; 
+    }
+
+    .section-one .box-wrapper .col-lg-2 .language {
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-one .box-wrapper .col-lg-2 a, .section-one .box-wrapper .col-lg-2 .language{
+        justify-content: flex-start;
+        margin: 2rem 0rem 0rem 2rem;
+    }
+
+    .section-one .box-wrapper {
+        bottom: -18vh;
+    }
+
+    .section-one .box-wrapper .fa-location-dot {
+        margin-left: 3rem;
+        font-size: 2rem;
+    }
+
+    .section-one .box-wrapper .fa-calendar-days {
+        margin-left: 3rem;
+        font-size: 2.1rem;
+    }
+
+    .section-one .box-wrapper .fa-star {
+        margin-left: 5rem;
+        font-size: 2.1rem;
+    }
+
+    .section-one .box-wrapper .hover-style-1 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    
+    .section-one .hover-style-1:hover {
+        box-shadow: inset 20rem 0rem 10rem 0rem var(--color-five);
+        color: white;
+        border-radius: 15px;
+        padding: 0.5rem;
+        padding-left: 1rem;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .section-one .box-wrapper {
+        bottom: -65vh;
+        width: 50%;
+    }
+
+    .section-one .box-wrapper .col-lg-2 a, .section-one .box-wrapper .col-lg-2 .language {
+        justify-content: left;
+    }
+
+    .section-one .box-wrapper .fa-location-dot {
+        margin-left: 5rem;
+    }
+
+    .section-one .box-wrapper .fa-calendar-days {
+        margin-left: 3.1rem;
+    }
+
+    .section-one .box-wrapper  .language .fa-globe {
+        margin-left: 0.7rem;
+    }
+
+    .section-one .box-wrapper .fa-star {
+        margin-left: 5rem;
+    }
+
+}
 
 /*  End Responsive  */
 /*  END SECTION 1  */

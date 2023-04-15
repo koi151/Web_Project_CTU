@@ -1,0 +1,143 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Poppins:wght@300&family=Raleway:wght@500;600;700&family=Roboto:wght@100;300;400;500&display=swap');
+
+:root {
+    --color-one: #fff;
+    --color-two: #000;
+    --color-three: #9d946b;
+    --color-four: #F6F6F6;
+    --color-five: #427cba;
+    --color-six: #E7E7E7;
+}
+
+* {
+    /* font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+/* ANIMATION */
+.zoom-in-out-icon {
+    animation: zoom-in-zoom-out 3s ease infinite;
+  }
+  
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.2, 1.2);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+
+.short-line {
+    background-color: var(--color-three);
+    width: 3.5rem;
+    height: 1.2px;
+    margin: 1.5rem 0rem;
+}
+
+/* BUTTON */
+#button-one {
+    text-decoration: none;
+    color: var(--color-two);
+    background-color: var(--color-one);
+    font-size: 0.75rem;
+    letter-spacing: 0.08rem;
+    border-radius: 10px;
+    padding: 0.7rem 1.4rem;
+    margin: 1.2rem 1.2rem 0rem 0rem;
+    transition: all 0.3s;
+}
+
+#button-one:hover {
+    background-color: var(--color-three);
+    color: var(--color-one);
+}
+
+/* FLEXBOX */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row !important;
+}
+
+.flex-20 {
+    flex: 0 0 20% !important;
+    max-width: 20% !important;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* TEXT SIZE */
+.bold {
+    font-weight: bold;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.bigger-text {
+    font-size: 1.1rem;
+}
+
+.smaller-text {
+    font-size: 0.9rem;
+}
+
+.tiny-text {
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* POSITION */
+.horizontal-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* SELECT */
+.restyle-select {
+    border: none;
+    font-size: 0.85rem;
+    display: block;
+    margin-left: -0.2rem;
+    margin-bottom: 0.4rem;
+    margin-top: 0.3rem;
+    cursor: pointer;
+}
+
+.goog-te-gadget .goog-te-combo {
+    border: none;
+    margin: 0 !important;
+}
+
+#google_translate_element span {
+    display: none;
+}
+
+.goog-logo-link {
+    display:none !important;
+} 
+    
+.goog-te-gadget{
+    color: transparent !important;
+}
+
+#google_translate_element { 
+    height: 15px !important;
+    overflow: hidden !important; 
+}
