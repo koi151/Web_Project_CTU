@@ -332,6 +332,12 @@
         margin-left: 5rem;
     }
 
+    #google_translate_element { 
+        height: 19px !important;
+        overflow: hidden !important; 
+    }
+
+
 }
 
 /*  End Responsive  */
