@@ -301,7 +301,7 @@
 @media (max-width: 576px) {
 
     .section-one .box-wrapper {
-        bottom: -28rem;
+        bottom: -65vh;
         width: 70%;
     }
 
