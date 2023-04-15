@@ -302,7 +302,14 @@
 
     .section-one .box-wrapper {
         bottom: -65vh;
-        width: 50%;
+        width: 70%;
+
+    }
+
+    .section-one .box-wrapper .col-lg-2 {
+        display: flex;
+        justify-content: center !important;
+        margin-right: 2rem;
     }
 
     .section-one .box-wrapper .col-lg-2 a, .section-one .box-wrapper .col-lg-2 .language {
