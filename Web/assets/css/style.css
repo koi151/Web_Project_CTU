@@ -435,6 +435,10 @@
 
 @media (max-width: 767px) {
 
+    .section-two {
+        margin-top: 10rem;
+    }
+
     .section-two .box-wrapper {
         width: 70%;
     }
