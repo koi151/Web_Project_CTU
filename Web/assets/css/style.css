@@ -266,7 +266,7 @@
     .section-one .hover-style-1:hover {
         box-shadow: inset 20rem 0rem 10rem 0rem var(--color-five);
         color: white;
-        border-radius: 15px;
+        border-radius: 10px;
         padding: 0.5rem;
         padding-left: 1rem;
         cursor: pointer;
