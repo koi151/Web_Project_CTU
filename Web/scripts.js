@@ -40,3 +40,9 @@ function googleTranslateElementInit() {
     a.dispatchEvent(new Event('change'));
 }
 
+// JQuery
+$(document).ready(function(){
+    $(".name1").click(function(){
+        $("#myDiv").load("myPage.html");
+    });
+});
