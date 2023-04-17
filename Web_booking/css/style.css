@@ -191,3 +191,9 @@
 .booking-form .submit-btn:focus {
 	opacity: 0.9;
 }
+
+@media (max-width: 991px) {
+	.section .booking-form{
+		margin-top: 10rem;
+	}
+}
