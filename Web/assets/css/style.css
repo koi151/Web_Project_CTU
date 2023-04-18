@@ -494,7 +494,66 @@
 
 
 /*  SECTION 4  */
+.section-four {
+  margin-top: 10px;
+}
+.section-four h1,
+.section-four #inf {
+  margin: 1.5rem;
+  text-align: center;
+}
+.section-four h1{
+  color: var(--color-three);
+}
+.section-four .box-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 3rem;
+  background-color: var(--color-one);
+  text-align: center;
+  box-shadow: 0 2px 50px 0 rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  height: 500px;
+}
 
+.section-four .box-wrapper img {
+  text-align: center;
+  height: 200px;
+  width: 300px;
+}
+.section-four .box-wrapper h2 {
+  margin: 1.5rem;
+}
+.section-four .box-wrapper h2::after,
+.section-four h1::after {
+  margin: 5px;
+  position: relative;
+  display: block;
+  left: 50%;
+  content: " ";
+  width: 80px;
+  height: 2px;
+  transform: rotateX(-12deg) translateX(-50%);
+  background: var(--color-three);
+}
+
+.section-four .box-wrapper h3 {
+  margin-top: 1rem;
+  color: var(--color-three);
+}
+.section-four .box-wrapper p {
+  margin-bottom: 0;
+}
+.section-four .box-wrapper a{
+  color: var(--color-three);
+  margin: 1rem;
+}
+.section-four .but-center {
+  align-items: center;
+  text-align: center;
+}
 
 /*  Responsive  */
 
