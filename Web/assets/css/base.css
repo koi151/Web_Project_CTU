@@ -1,11 +1,11 @@
 /* GOOGLE FONT */
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Poppins:wght@300&family=Raleway:wght@500;600;700&family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
     --color-one: #fff;
-    --color-two: #000;
+    --color-two: #0a0a0a;
     --color-three: #9d946b;
-    /* --color-three: #a97f02; */
     --color-four: #F6F6F6;
     --color-five: #427cba;
     --color-six: #E7E7E7;
@@ -22,10 +22,6 @@
 *::selection {
     background-color: var(--color-three);
     color: var(--color-one);
-}
-
-footer {
-    font-family: Rehn-Regular,Arial,Helvetica,sans-serif;
 }
 
 /* ANIMATION */
@@ -67,9 +63,53 @@ footer {
     transition: all 0.3s;
 }
 
-#button-one:hover {
+#button-one,
+#button-five {
+    text-decoration: none;
+    color: var(--color-two);
+    background-color: var(--color-one);
+    font-size: 0.75rem;
+    letter-spacing: 0.08rem;
+    border-radius: 10px;
+    padding: 0.7rem 1.5rem;
+    margin: 1rem 1.2rem 0rem 0rem;
+    transition: all 0.3s;
+}
+
+#button-one:hover,
+#button-four:hover,
+#button-five:hover {
     background-color: var(--color-three);
     color: var(--color-one);
+}
+
+#button-four {
+    text-decoration: none;
+    color: var(--color-two);
+    background-color: var(--color-one);
+    font-size: 0.75rem;
+    letter-spacing: 0.08rem;
+    border-radius: 10px;
+    padding: 1rem 1.7rem;
+    transition: all 0.3s;
+    border: 2px solid #d9d9d9;
+    border-top: none;
+    border-left: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#button-four:hover {
+    background-color: var(--color-three);
+    color: var(--color-one);
+}
+
+#button-five {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
 }
 
 /* FLEXBOX */
@@ -175,9 +215,22 @@ footer {
 .hover-style-1:hover {
     box-shadow: inset 10rem 0 0 0 var(--color-five);
     color: white !important;
-    border-radius: 15px;
+    border-radius: 15px !important;
     padding: 0.5rem;
     padding-left: 1rem;
     cursor: pointer;
 }
 
+.darken-layer {
+    position: absolute;
+    background-color: #000;
+    opacity: 0.1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.margin-none {
+    margin: 0 !important;
+}
