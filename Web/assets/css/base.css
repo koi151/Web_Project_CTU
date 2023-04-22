@@ -15,7 +15,7 @@
     /* font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     font-family: 'Poppins', sans-serif;
     font-family: 'Raleway', sans-serif;
-    
+
     /* font-family: 'Roboto', sans-serif; */
 }
 
@@ -24,23 +24,32 @@
     color: var(--color-one);
 }
 
+<<<<<<< HEAD
+=======
+footer {
+    font-family: Rehn-Regular, Arial, Helvetica, sans-serif;
+}
+
+>>>>>>> 92d6e2f20a69d49cb134cad4107047ea2395db28
 /* ANIMATION */
 .zoom-in-out-icon {
     animation: zoom-in-zoom-out 3s ease infinite;
     color: var(--color-five) !important;
-  }
-  
-  @keyframes zoom-in-zoom-out {
+}
+
+@keyframes zoom-in-zoom-out {
     0% {
-      transform: scale(1, 1);
+        transform: scale(1, 1);
     }
+
     50% {
-      transform: scale(1.2, 1.2);
+        transform: scale(1.2, 1.2);
     }
+
     100% {
-      transform: scale(1, 1);
+        transform: scale(1, 1);
     }
-  }
+}
 
 
 .short-line {
@@ -51,18 +60,21 @@
 }
 
 /* BUTTON */
-#button-one {
+#button-one,
+#button-five {
     text-decoration: none;
     color: var(--color-two);
     background-color: var(--color-one);
     font-size: 0.75rem;
     letter-spacing: 0.08rem;
     border-radius: 10px;
-    padding: 0.7rem 1.4rem;
+    /* padding: 0.7rem 1.4rem; Adjust the padding to be larger */
+    padding: 1rem 1.7rem;
     margin: 1.2rem 1.2rem 0rem 0rem;
     transition: all 0.3s;
 }
 
+<<<<<<< HEAD
 #button-one,
 #button-five {
     text-decoration: none;
@@ -78,11 +90,15 @@
 
 #button-one:hover,
 #button-four:hover,
+=======
+#button-one:hover,
+>>>>>>> 92d6e2f20a69d49cb134cad4107047ea2395db28
 #button-five:hover {
     background-color: var(--color-three);
     color: var(--color-one);
 }
 
+<<<<<<< HEAD
 #button-four {
     text-decoration: none;
     color: var(--color-two);
@@ -110,6 +126,13 @@
     text-transform: uppercase;
     font-size: 0.8rem;
     letter-spacing: 0.2rem;
+=======
+#button-five {
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+
+>>>>>>> 92d6e2f20a69d49cb134cad4107047ea2395db28
 }
 
 /* FLEXBOX */
@@ -182,16 +205,16 @@
 }
 
 .goog-logo-link {
-    display:none !important;
-} 
-    
-.goog-te-gadget{
+    display: none !important;
+}
+
+.goog-te-gadget {
     color: transparent !important;
 }
 
-#google_translate_element { 
+#google_translate_element {
     height: 15px !important;
-    overflow: hidden !important; 
+    overflow: hidden !important;
 }
 
 /* HOVER EFFECTS */
@@ -219,6 +242,7 @@
     padding: 0.5rem;
     padding-left: 1rem;
     cursor: pointer;
+<<<<<<< HEAD
 }
 
 .darken-layer {
@@ -234,3 +258,6 @@
 .margin-none {
     margin: 0 !important;
 }
+=======
+}
+>>>>>>> 92d6e2f20a69d49cb134cad4107047ea2395db28
