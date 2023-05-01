@@ -624,6 +624,12 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
 }
 
 @media (max-width: 460px) {
+
+    .section-one .col-sm-6 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
     .section-one .box-wrapper {
        width: 85%;
     }
@@ -649,10 +655,6 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
         font-size: 0.9rem;
     }
 
-    .section-one .box-wrapper a i,
-    .section-one .box-wrapper .fa-globe {
-        font-size: 25px !important;
-    }
 }
 
 /*  End Responsive  */
