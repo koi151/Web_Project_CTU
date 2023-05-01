@@ -641,7 +641,7 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
     
     .section-one .goog-te-gadget .goog-te-combo {
         position: absolute;
-        left: 2.6rem;
+        left: 2.5rem;
         font-size: 0.65rem;
     } 
 }
