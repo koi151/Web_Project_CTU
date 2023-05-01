@@ -644,6 +644,15 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
         left: 2.5rem;
         font-size: 0.65rem;
     } 
+
+    .section-one .box-wrapper .col-lg-2:nth-child(n+4) a {
+        font-size: 0.9rem;
+    }
+
+    .section-one .box-wrapper a i,
+    .section-one .box-wrapper .fa-globe {
+        font-size: 25px !important;
+    }
 }
 
 /*  End Responsive  */
