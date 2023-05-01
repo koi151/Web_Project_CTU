@@ -26,31 +26,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
 </head>
 
 <body>
-
     <header>
         <input type="checkbox" id="toggle">
+
         <nav>
             <div class="container">
                 <a class="navbar-brand" href="#">
                     The Anam Cam Ranh
                 </a>
-                <label class="navbar-toggle" for="toggle">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </label>
-                <ul class="nav-list">
+                <div class="box">
+                    <!-- oninput="KeyWord()" -->
+                    <input type="checkbox" id="check" oninput="KeyWord()">
+                    <div class="search-box">
+                        <input type="text" placeholder="Tìm từ khóa...">
+                        <label for="check" class="icon">
+                            <i class="fas fa-search"></i>
+                        </label>
+                    </div>
+                </div>
+                <ul class="nav-list search-wrapper" id="searchArea">
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                             TRANG CHỦ
@@ -58,8 +63,8 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            LIÊN HỆ
+                        <a onclick="phoneNum()" href="#" class="nav-link">
+                            LIÊN LẠC
                         </a>
                     </li>
 
@@ -70,12 +75,13 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="https://web-project-ctu-booking-site.vercel.app/" class="nav-link">
                             ĐẶT PHÒNG
                         </a>
                     </li>
                 </ul>
             </div>
+
         </nav>
     </header>
 
@@ -86,21 +92,21 @@
             <div class="row flex-column">
                 <div class="content-wrapper">
                     <h1>
-                        EXCLUSIVITY. LOVELY
-                        FAMILY HOME WITH
-                        SWIMMING POOL,TANNAY
+                        Chào mừng bạn đến với resort Anam.
                     </h1>
                     <div class="short-line"></div>
                     <span>
-                        Prime and Luxury Properties, Sales and Retails, Real Estate Consulting
+                        Nơi đây mang đến cho bạn những trải nghiệm đẳng cấp và tuyệt vời nhất.
+                        <br><br>
+                        Hãy để chúng tôi giúp bạn đặt phòng và tận hưởng kỳ nghỉ của mình ngay bây giờ!”.
                     </span>
                 </div>
                 <div class="button-wrapper">
                     <a href="" id="button-one">
-                        SEE PROPERTY
+                        GIỚI THIỆU
                     </a>
                     <a href="" id="button-one">
-                        ALL PROPERTIES
+                        XEM TIỆN ÍCH
                     </a>
                 </div>
             </div>
@@ -122,7 +128,9 @@
                     <div class="col-lg-2 flex-20 col-md-4 col-sm-6">
                         <a href="" class="date-link">
                             <div class="inner-wrap flex-column">
-                                <b class="recolor-text bolder">Đang mở cửa</b>
+                                <b class="recolor-text bolder">
+                                    Đang mở cửa
+                                </b>
                                 <span class="date"></span>
                             </div>
                             <i class="fa-regular fa-calendar-days"></i>
@@ -168,11 +176,13 @@
             <div class="row">
                 <div class="col-12">
                     <div class="text-wrapper">
-                        <h2>CATEGORIES</h2>
+                        <h2>KHÔNG GIAN NGHỈ DƯỠNG</h2>
                         <div class="short-line"></div>
                         <p>
-                            Make your search easier! We have classified our properties to help find directly the
-                            properties corresponding to your critteria
+                            “Hãy tận hưởng sự tiện nghi trong không gian thoải mái và sang trọng. 
+                            <br>
+                            Các phòng được thiết
+                            kế tinh tế với các tiện ích hiện đại cùng góc nhìn tuyệt đẹp."
                         </p>
                     </div>
                 </div>
@@ -181,10 +191,10 @@
                         <img src="https://drive.google.com/uc?export=view&id=1JSpbpN9-FU9bWN9vzQBz35vdY-IG6jZ3"
                             alt="room1">
                         <h3>
-                            LUXURY PLACES
+                            PHÒNG TIÊU CHUẨN
                         </h3>
                         <p>
-                            Fine properties of Sweden
+                            Giường ngủ êm ái
                         </p>
                     </div>
                 </div>
@@ -193,10 +203,10 @@
                         <img src="https://drive.google.com/uc?export=view&id=1hBsY7DCOqBHMSrFc8tXwyFTHFaJhq58e"
                             alt="room2">
                         <h3>
-                            LUXURY PLACES
+                            PHÒNG VIP
                         </h3>
                         <p>
-                            Fine properties of Sweden
+                            Hồ bơi thư giãn
                         </p>
                     </div>
                 </div>
@@ -205,10 +215,10 @@
                         <img src="https://drive.google.com/uc?export=view&id=12fxrKRwonh5FT64bUcp1xYjdBugxspNk"
                             alt="room3">
                         <h3>
-                            LUXURY PLACES
+                            PHÒNG TRÊN CAO
                         </h3>
                         <p>
-                            Fine properties of Sweden
+                            Góc nhìn hoàn mĩ
                         </p>
                     </div>
                 </div>
@@ -217,10 +227,10 @@
                         <img src="https://drive.google.com/uc?export=view&id=19XllF3v5QfnhpjuNs79AfSQOUvzLVTXR"
                             alt="room4">
                         <h3>
-                            LUXURY PLACES
+                            PHÒNG XL
                         </h3>
                         <p>
-                            Fine properties of Sweden
+                            Trang thiết bị hiện đại
                         </p>
                     </div>
                 </div>
@@ -230,11 +240,10 @@
 
 
     <!-- SECTION FOUR -->
-    <!-- SECTION FOUR -->
     <section class="section-four">
         <div class="container">
             <h1 class="bigger-text">
-                DANH SÁCH NỔI BẬT
+                DỊCH VỤ ĐA DẠNG
             </h1>
             <p class="tiny-text" id="inf">
                 Bạn đang tìm kiếm điều gì? Hãy xem một số đề xuất dưới đây
@@ -249,17 +258,17 @@
                         <img src="https://drive.google.com/uc?export=view&id=1DqyICF6xSddCfX9O8T1qDPW4TrW7_UPo"
                             alt="nha-an" />
                         <h3 class="tiny-text">
-                            COMMUGNY
+                            KHÔNG GIAN CHUNG
                         </h3>
                         <h2 class="smaller-text">
-                            RESTAURANT
+                            NHÀ HÀNG
                         </h2>
                         <p class="tiny-text">
                             Nhà hàng được thiết kế vừa sang trọng,
                             vừa ấm cúng, mang lại cảm giác thoải mái cho khách hàng.
                         </p>
                         <a href="#logo" class="smaller-text hover-style-1">
-                            READ MORE
+                            XEM THÊM
                             <i class="fa-solid fa-circle-info"></i>
                         </a>
                     </div>
@@ -269,17 +278,17 @@
                         <img src="https://drive.google.com/uc?export=view&id=1YIu0iCA27YATHqT-JdTMIp7blSSJ5Bu1"
                             alt="ngoai canh" />
                         <h3 class="tiny-text">
-                            PERROY
+                            GIẢI TRÍ
                         </h3>
                         <h2 class="smaller-text">
-                            OUTDOOR ACTIVITIES
+                            HOẠT ĐỘNG NGOÀI TRỜI
                         </h2>
                         <p class="tiny-text">
                             Những hoạt động ngoài trời bên bờ biến, các bạn có thể vừa
                             ngắm cảnh, vừa tham gia các trò chơi.
                         </p>
                         <a href="#logo" class="smaller-text hover-style-1">
-                            READ MORE
+                            XEM THÊM
                             <i class="fa-solid fa-circle-info"></i>
                         </a>
                     </div>
@@ -289,17 +298,17 @@
                         <img src="https://drive.google.com/uc?export=view&id=1Yy6jzYBttZPNSbGCkkUweO1PGzC-8Gly"
                             alt="buoi toi" />
                         <h3 class="tiny-text">
-                            VANDOEUVRES
+                            NGẮM CẢNH
                         </h3>
                         <h2 class="smaller-text">
-                            BEAUTIFUL VIEWS AT NIGHT
+                            BUỔI TỐI THƠ MỘNG
                         </h2>
                         <p class="tiny-text">
                             Khung cảnh ban đêm đầy huyền bí và lung linh.
                             Hồ bơi soi bóng bầu trời và cảnh vật tuyệt đẹp xung quanh.
                         </p>
                         <a href="#logo" class="smaller-text hover-style-1">
-                            READ MORE
+                            XEM THÊM
                             <i class="fa-solid fa-circle-info"></i>
                         </a>
                     </div>
@@ -307,7 +316,7 @@
             </div>
             <div class="but-center">
                 <button id="button-four" class="sec4">
-                    VIEW ALL FEATURED PROPERTIES
+                    XEM TẤT CẢ DỊCH VỤ NỔI BẬT
                 </button>
             </div>
         </div>
@@ -320,26 +329,22 @@
                 <div class="col-lg-12">
                     <img id="s5-main-img"
                         src="https://drive.google.com/uc?export=view&id=16VzNf6tQ-KjWhevpmljDKHnwu-C2fWFd" alt="">
-
                     <div class="box-wrapper up">
                         <div class="h2-wrapper">
                             <h2>
-                                we provide unrivalled quality for more than 15 years
+                               VỀ KHÁCH SẠN
                             </h2>
                         </div>
 
                         <div class="short-line"></div>
                         <div class="text-wrapper">
                             <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, fugit pariatur
-                                excepturi sed autem a at, soluta quam, saepe et tempore voluptates labore fugiat id nam
-                                odit? Blanditiis suscipit odio et recusandae officiis in sapiente voluptas, quibusdam
-
+                                The Anam Cam Ranh là một resort 5 sao sang trọng nằm bên bờ biển với khu vườn cảnh tươi tốt bao quanh.  
+                                Chất lượng của khu nghỉ dưỡng thường được đánh giá cao, với các tiêu chuẩn và dịch vụ đạt chuẩn quốc tế.
                             </p>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, non mollitia ipsum
-                                dolore
-                                ut quod perferendis consectetur illo harum vel?
+                                Đội ngũ nhân viên được đào tạo chuyên nghiệp và có kinh nghiệm trong lĩnh vực du lịch, 
+                                đặc biệt có khả năng giao tiếp tốt, năng động, nhiệt tình và thân thiện với khách hàng.
                             </p>
                         </div>
                         <a href="#" id="button-five"><span> about us</span></a>
@@ -351,43 +356,53 @@
                     <div class="box-wrapper">
                         <div class="text-wrapper">
                             <h2>
-                                lastest blog articles
+                                Đánh giá
                             </h2>
                             <div class="short-line"></div>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam iste tempora enim
-                                officiis
-                                unde ipsum laborum voluptatem sit necessitatibus quia fugit incidunt quo eius reiciendis
+                                Kinh nghiệm phục vụ của khu nghỉ dưỡng thường được đánh giá cao, hãy đọc những đánh giá tích cực từ khách hàng của chúng tôi để biết thêm về chất lượng dịch vụ và trải nghiệm tuyệt vời mà chúng tôi mang lại
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row shorten">
-                <div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center">
-                    <div class="inner-wrapper">
-                        <div class="inner-text">
-                            <h5>
-                                inflation: implications for real estate
-                            </h5>
-                        </div>
-                        <img src="https://img.freepik.com/free-vector/recycle-symbol-environmental-conservation-vector_53876-76254.jpg?w=1380&t=st=1681737796~exp=1681738396~hmac=ff40e1ef5c80943a3b10f69fe561d664b46f0175e98cc6da7c3f2e7937dd117e"
-                            alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center">
-                    <div class="inner-wrapper">
-                        <div class="inner-text">
-                            <h5>
-                                inflation: implications for real estate
-                            </h5>
-                        </div>
-                        <img src="https://img.freepik.com/free-vector/freelancer-working-laptop-her-house_1150-35048.jpg?w=1380&t=st=1681739672~exp=1681740272~hmac=4d06a32d40fef08bf59c1f4af87779e27f639ac6a166bec213a9ba9b5828413c"
-                            alt="">
-                    </div>
-                </div>
+            <div class="col-lg-12 rating-wrapper">
+                <img src="https://drive.google.com/uc?export=view&id=1GLI5ArSHwV2W8c60cjNxjGfvMNI9ZDlo" alt="" class="rating">
             </div>
+            <div class="row comment">
+                <div class="col-lg-6">
+                    <div class="box-wrapper-2">
+                        <div class="text-box">
+                            <p>
+                                <i class="fa-solid fa-quote-left quote-left"></i>
+                                “Không gian tuyệt đẹp, nhân viên thân thiện, nhất là bãi cỏ đẹp tuyệt vời! 
+                                Nếu có dịp tôi sẽ ghé thăm lại The Anam”
+                                <i class="fa-solid fa-quote-right quote-right"></i>
+                            </p>
+                        </div>
+                        <img src="https://bootstrapmade.com/demo/templates/OnePage/assets/img/testimonials/testimonials-1.jpg"
+                            alt="portrait-1">
+                        <div class="triangle-div"></div>
+                        <h2>Trần Dần</h2>
+                        <p>Khách Hàng</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="box-wrapper-2">
+                        <div class="text-box">
+                            <p>
+                                <i class="fa-solid fa-quote-left quote-left"></i>
+                                “Chỗ nghỉ tuyệt vời cho các khách nghỉ dưỡng tinh tế và có gu. 
+                                Resort được chăm sóc đến từng chi tiết. Tôi rất thích và sẽ quay trở lại.”
+                                <i class="fa-solid fa-quote-right quote-right"></i>
+                            </p>
+                        </div>
+                        <img src="https://bootstrapmade.com/demo/templates/OnePage/assets/img/testimonials/testimonials-2.jpg"
+                            alt="portrait-2">
+                        <h2>Phương Hằng</h2>
+                        <p>Khách Hàng</p>
+                    </div>
+                </div>
         </div>
     </section>
 
@@ -406,7 +421,7 @@
         }
     </script>
 
-
+    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d975.2928471795474!2d109.19208330000001!3d12.1004167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDA2JzAxLjUiTiAxMDnCsDExJzMxLjUiRQ!5e0!3m2!1svi!2s!4v1682937968629!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    <!-- FOOTER -->
     <footer>
         <div class="container">
             <div class="row modify">
@@ -470,7 +485,7 @@
                 <div class="col-lg-3 col-md-6 ss-4">
                     <h6 class="h6">HỖ TRỢ</h6>
                     <div>
-                        <ul class="support">
+                        <ul class="support" id="searchArea">
                             <li>
                                 <a href="#">
                                     Trung tâm trợ giúp
@@ -518,6 +533,9 @@
             </div>
         </div>
     </footer>
+
+
+
 
 </body>
 

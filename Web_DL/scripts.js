@@ -46,3 +46,48 @@ $(document).ready(function(){
         $("#myDiv").load("myPage.html");
     });
 });
+
+
+//ksndsdnvknskvsdnvksdv
+function searchToggle(obj, evt){
+    var container = $(obj).closest('.search-wrapper');
+    if(!container.hasClass('active')){
+        container.addClass('active');
+        evt.preventDefault();
+    } else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
+        container.removeClass('active');
+        container.find('.search-input').val('');
+    }
+}
+
+function Keysearch() {
+    document.getElementById("searchArea").classList.toggle("show");
+}
+  
+  function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+      txtValue = a[i].textContent || a[i].innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        a[i].style.display = "";
+      } else {
+        a[i].style.display = "none";
+      }
+    }
+  }
+
+// window.addEventListener("DOMContentLoaded", KeyWord);
+// window.onload = KeyWord;
+
+// $('phoneNum').click(function() {
+//     window.alert("Số điện thoại: 0285 398 9499");
+// });
+
+function phoneNum()
+{
+    window.alert("Quý khách vui lòng liên hệ qua số điện thoại:  0285 398 9499");
+}
