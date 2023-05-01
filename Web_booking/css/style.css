@@ -193,7 +193,13 @@
 }
 
 @media (max-width: 991px) {
-	.section .booking-form{
-		margin-top: 10rem;
+	.section {
+		background-image: url(https://drive.google.com/uc?export=view&id=1cRjdOICgr8_B7OrqlSWcbogYJREZ0vVX);
+		background-position: center center;
+		background-position: cover;
+		background-repeat: no-repeat;
+		position: relative;
+		height: 170vh;
+		width: auto;
 	}
 }
