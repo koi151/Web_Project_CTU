@@ -634,6 +634,17 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
     }
 }
 
+@media (max-width: 385px) {
+    .section-one .box-wrapper {
+       width: 90%;
+    }
+    .goog-te-gadget .goog-te-combo, 
+    .section-one .box-wrapper .inner-wrap .date,
+    .section-one .tiny-text, .section-one .smaller-text {
+        font-size: 0.7rem;
+    }
+}
+
 /*  End Responsive  */
 /*  END SECTION 1  */
 
