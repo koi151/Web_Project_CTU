@@ -617,25 +617,20 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
         justify-content: left;
     }
 
-    .section-one .box-wrapper .fa-location-dot {
-        margin-left: 5rem;
-    }
-
-    .section-one .box-wrapper .fa-calendar-days {
-        margin-left: 3.1rem;
-    }
-
-    .section-one .box-wrapper .language .fa-globe {
-        margin-left: 0.7rem;
-    }
-
-    .section-one .box-wrapper .fa-star {
-        margin-left: 5rem;
-    }
-
     #google_translate_element {
         height: 22px !important;
         overflow: hidden !important;
+    }
+}
+
+@media (max-width: 460px) {
+    .section-one .box-wrapper {
+       width: 85%;
+    }
+    .goog-te-gadget .goog-te-combo, 
+    .section-one .box-wrapper .inner-wrap .date,
+    .section-one .tiny-text, .section-one .smaller-text {
+        font-size: 0.8rem;
     }
 }
 
@@ -668,7 +663,7 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
 }
 
 .section-two .text-wrapper p {
-    color: var(--color-two);
+    color: var(--color-twelve);
     font-size: 0.9rem;
     max-width: 40rem;
     text-align: center;
@@ -692,21 +687,21 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
 }
 
 .section-two .box-wrapper h3 {
-    margin-top: 1rem;
+    margin-top: 1.3rem;
     margin-bottom: 0.2rem;
     font-size: 1rem;
-    color: var(--color-three);
-    box-shadow: inset 0 0 0 0 var(--color-three);
+    color: #a99635;
+    box-shadow: inset 0 0 0 0 #a99635;
     transition: all 0.5s;
     border-radius: 15px;
 }
 
 .section-two .box-wrapper p {
-    color: var(--color-three)
+    color: var(--color-twelve);
 }
 
 .section-two .box-wrapper:hover h3 {
-    box-shadow: inset 10rem 0 0 0 var(--color-three);
+    box-shadow: inset 12rem 0 0 0 var(--color-three);
     color: white;
     border-radius: 15px;
     padding: 0.4rem;
@@ -722,18 +717,6 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
     height: auto;
     border-radius: 15px;
     overflow: hidden;
-}
-
-.section-two .box-wrapper .promo::before {
-    position: relative;
-    top: 0;
-    right: 0;
-    padding: 5px;
-    background-color: #9d946b;
-    color: var(--color-two);
-    content: "SALE OFF";
-    font-size: 99px;
-    z-index: 99;
 }
 
 .section-two .box-wrapper p {
@@ -844,14 +827,21 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
     color: var(--color-three);
     font-size: 0.85rem;
 }
+.section-four .h3-tiny {
+    font-size: 0.8rem;
+    color: var(--color-twelve) !important;
+}
 
 .section-four .box-wrapper .tiny-text {
     color: var(--color-two);
+    font-size: 0.8rem;
 }
 
 .section-four h1, .section-four #inf {
     margin: 1.5rem 2rem 2rem 2rem ;
     text-align: center;
+    color: var(--color-twelve);
+    font-size: 0.9rem;
 }
 
 .section-four h1 {
@@ -907,7 +897,7 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
 }
 
 .section-four .box-wrapper h2::after {
-    margin-top: 0.7rem;
+    margin-top: 1.2rem;
     width: 2.5rem;
     opacity: 0.5;
 }
@@ -1081,6 +1071,7 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
 .section-five .box-wrapper .text-wrapper {
     max-width: 48rem;
     font-size: 0.9rem;
+    color: var(--color-twelve);
 }
 
 .h2-wrapper {
@@ -1100,11 +1091,6 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
 .section-five .box-wrapper h2 {
     font-size: 1.4rem;
     margin: 0.5rem 0rem;
-}
-
-.section-five .inner-wrapper img {
-    /* height: 12rem; */
-
 }
 
 .section-five .box-wrapper h2,
@@ -1130,6 +1116,24 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
     margin: 0.8rem auto 1rem auto;
     width: 3rem
 }
+
+.section-four .box-wrapper .fix-mar {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.section-four .box-wrapper .smaller-text {
+    font-size: 0.85rem;
+}
+
+.section-four .box-wrapper .smaller-text-ad {
+    font-weight: 500;
+    font-size: 1.1rem !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-three);
+}
+
+
 
 /*================================*/
 .section-five .comment {
