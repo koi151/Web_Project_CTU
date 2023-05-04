@@ -188,7 +188,7 @@ input{
     nav .nav-list{
         display: grid;
         position: absolute;
-        background-color: #efefef;
+        background-color: #212121;
         width: 100%;
         left: 0;
         top: 3rem;
@@ -664,6 +664,10 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
 
     .section-one .box-wrapper .col-lg-2:nth-child(n+4) a {
         font-size: 0.9rem;
+    }
+
+    .section-one .content-wrapper {
+        margin-right: 3rem;
     }
 }
 
