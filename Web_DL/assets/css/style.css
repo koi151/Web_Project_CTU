@@ -632,6 +632,10 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
         height: 22px !important;
         overflow: hidden !important;
     }
+
+    .section-one .content-wrapper {
+        margin-right: 3rem;
+    }
 }
 
 @media (max-width: 460px) {
@@ -651,7 +655,7 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
     }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 391px) {
     .section-one .box-wrapper {
        width: 90%;
     }
@@ -664,10 +668,6 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
 
     .section-one .box-wrapper .col-lg-2:nth-child(n+4) a {
         font-size: 0.9rem;
-    }
-
-    .section-one .content-wrapper {
-        margin-right: 3rem;
     }
 }
 
