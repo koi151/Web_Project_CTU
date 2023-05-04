@@ -32,14 +32,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
-<body>
+<body style="width: 100vw">
+    <div class="darken-layer"></div>
     <header>
         <input type="checkbox" id="toggle">
         <nav>
@@ -91,13 +95,12 @@
         </nav>
     </header>
 
-    <!-- <button class="user-login" onclick="loginActive()">
+    <button class="user-login" onclick="loginActive()">
         <i class="fa-regular fa-user"></i>
-    </button> -->
+    </button>
 
     <!-- SECTION ONE -->
     <section class="section-one">
-        <!-- <div class="darken-layer"></div> -->
         <div class="container">
             <div class="row flex-column">
                 <div class="content-wrapper">
@@ -424,8 +427,7 @@
             </div>
     </section>
 
-    <section class="vh-100 gradient-custom">
-        <i class="fa-solid fa-xmark" onclick="off()"></i>
+    <section class="vh-100 gradient-custom" id="exit1">
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-12 col-md-8 col-lg-6 col-xl-5">
@@ -439,12 +441,14 @@
 
                                 <div class="form-outline form-white mb-4">
                                     <label class="form-label" for="typeEmailX"></label>
-                                    <input type="email" id="typeEmailX" class="form-control form-control-lg" placeholder="Email:">
+                                    <input type="email" id="typeEmailX" class="form-control form-control-lg"
+                                        placeholder="Email:">
                                 </div>
 
                                 <div class="form-outline form-white mb-4">
                                     <label class="form-label" for="typePasswordX"></label>
-                                    <input type="password" id="typePasswordX" class="form-control form-control-lg" placeholder="Password:">
+                                    <input type="password" id="typePasswordX" class="form-control form-control-lg"
+                                        placeholder="Password:">
                                 </div>
 
                                 <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Quên mật khẩu?</a>
@@ -461,7 +465,8 @@
                             </div>
 
                             <div>
-                                <p class="mb-0">Bạn chưa có tài khoản ?<span> </span><a href="#!" class="text-white-50 fw-bold">Đăng
+                                <p class="mb-0">Bạn chưa có tài khoản ?<span> </span><a href="#!"
+                                        class="text-white-50 fw-bold">Đăng
                                         Ký</a>
                                 </p>
                             </div>
@@ -474,20 +479,7 @@
     </section>
 
 
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'vi'
-            }, 'google_translate_element');
-            var $googleDiv = $("#google_translate_element .skiptranslate");
-            var $googleDivChild = $("#google_translate_element .skiptranslate div");
-            $googleDivChild.next().remove();
 
-            $googleDiv.contents().filter(function () {
-                return this.nodeType === 3 && $.trim(this.nodeValue) !== '';
-            }).remove();
-        }
-    </script>
 
     <iframe
         src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d975.2928471795474!2d109.19208330000001!3d12.1004167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDA2JzAxLjUiTiAxMDnCsDExJzMxLjUiRQ!5e0!3m2!1svi!2s!4v1682937968629!5m2!1svi!2s"
@@ -605,6 +597,21 @@
         </div>
     </footer>
 
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'vi'
+            }, 'google_translate_element');
+            var $googleDiv = $("#google_translate_element .skiptranslate");
+            var $googleDivChild = $("#google_translate_element .skiptranslate div");
+            $googleDivChild.next().remove();
+
+            $googleDiv.contents().filter(function () {
+                return this.nodeType === 3 && $.trim(this.nodeValue) !== '';
+            }).remove();
+        }
+        
+    </script>
 
 
 

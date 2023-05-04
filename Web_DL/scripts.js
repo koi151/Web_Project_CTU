@@ -85,18 +85,46 @@ function phoneNum()
     window.alert("Quý khách vui lòng liên hệ qua số điện thoại:  0285 398 9499");
 }
 
-var on = document.querySelector(".user-login");
 
 function loginActive()
 {
     let t = document.querySelector(".gradient-custom");
-    t.classList.add("active");
-    console.log("Resgister form active");
+    
+    if (t.classList.contains('active'))
+    {
+        let t1 = document.querySelector(".darken-layer");
+        t.classList.remove("active");
+        t1.classList.remove("active");
+        console.log("Resgister form inactive");
+    }
+    else
+    {
+        let t1 = document.querySelector(".darken-layer");
+        t.classList.add("active");
+        t1.classList.add("active");
+        console.log("Resgister form active");
+    }
 }
 
-function off()
-{
-    let t = document.querySelector(".gradient-custom");
-    t.classList.remove("active");
-    console.log("Resgister form inactive");
-}
+// Closing box when clicked outside box area
+
+// var modal = document.getElementsById('exit1');
+
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function (event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//     }
+// }
+
+document.addEventListener('click', function handleClickOutsideBox(event) {
+    // 👇️ the element the user clicked
+    console.log('user clicked: ', event.target);
+  
+    const box = document.querySelector(".gradient-custom .card-body");
+  
+    if (!box.contains(event.target)) {
+      box.style.display = 'none';
+    }
+  });
+  
