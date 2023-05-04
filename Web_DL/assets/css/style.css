@@ -320,7 +320,7 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
 }
 
 .section-one .button-wrapper {
-    margin-left: 1rem;
+    margin-left: 1.5rem;
     display: flex;
     flex-direction: row;
 }
@@ -472,6 +472,12 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
     .section-one .box-wrapper {
         bottom: -3rem;
         max-width: 80%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .section-one .button-wrapper {
@@ -479,6 +485,9 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
         text-align: center;
         justify-content: center;
         align-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+
     }
 
     .section-one .short-line {

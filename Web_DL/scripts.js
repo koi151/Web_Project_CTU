@@ -117,14 +117,14 @@ function loginActive()
 //     }
 // }
 
-document.addEventListener('click', function handleClickOutsideBox(event) {
-    // 👇️ the element the user clicked
-    console.log('user clicked: ', event.target);
+// document.addEventListener('click', function handleClickOutsideBox(event) {
+//     // 👇️ the element the user clicked
+//     console.log('user clicked: ', event.target);
   
-    const box = document.querySelector(".gradient-custom .card-body");
+//     const box = document.querySelector(".gradient-custom .card-body");
   
-    if (!box.contains(event.target)) {
-      box.style.display = 'none';
-    }
-  });
+//     if (!box.contains(event.target)) {
+//       box.style.display = 'none';
+//     }
+//   });
   
