@@ -651,7 +651,7 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
     }
 }
 
-@media (max-width: 385px) {
+@media (max-width: 391px) {
     .section-one .box-wrapper {
        width: 90%;
     }
@@ -665,7 +665,6 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
     .section-one .box-wrapper .col-lg-2:nth-child(n+4) a {
         font-size: 0.9rem;
     }
-
 }
 
 /*  End Responsive  */
@@ -1257,6 +1256,13 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
     position: absolute;
     bottom: 208px;
     left: calc(50% - 20px);
+}
+
+.section-five .td {
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+    object-position: center center;
 }
 
 /*  Responsive  */
