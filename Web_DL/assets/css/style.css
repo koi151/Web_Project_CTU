@@ -23,10 +23,11 @@ nav{
     display: flex;
     /* justify-content: space-between; */
     height: 4rem;
-    width: 100%;
+    width: 100vw;
     line-height: 3rem;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
 } 
+
 
 nav .navbar-brand{
     color: var(--color-three);
@@ -456,6 +457,7 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
 
 @media (max-width: 991px) {
 
+
     .section-one .content-wrapper,
     .section-one .content-wrapper span {
         display: flex;
@@ -475,8 +477,8 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
     .section-one .button-wrapper {
         display: flex;
         text-align: center;
-        justify-self: center;
-        align-self: center;
+        justify-content: center;
+        align-content: center;
     }
 
     .section-one .short-line {

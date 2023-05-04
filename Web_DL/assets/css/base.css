@@ -37,6 +37,10 @@
     color: var(--color-one);
 }
 
+section {
+    width: 100% !important;
+}
+
 /* ANIMATION */
 .zoom-in-out-icon {
     animation: zoom-in-zoom-out 3s ease infinite;
@@ -161,6 +165,13 @@
 .smaller-text {
     font-size: 0.9rem;
 }
+/*do nothing*/
+@media (max-width: 600px)
+{
+    html, body {
+       overflow-x: hidden !important;
+    }
+}
 
 .tiny-text {
     font-size: 0.8rem;
@@ -253,7 +264,7 @@
 /* iframe */
 iframe {
     height: 30rem;
-    width: 100vw;
+    width: 100%;
 }
 /* <input type="checkbox" id="toggle"> */
 
@@ -377,3 +388,4 @@ button .fa-user:hover {
 .form-control::-ms-input-placeholder { /* Microsoft Edge */
     color:  #f3f3f399  !important;
 }
+
