@@ -651,7 +651,7 @@ input:checked ~ nav .navbar-toggle .bar:nth-child(3){
     }
 }
 
-@media (max-width: 391px) {
+@media (max-width: 410px) {
     .section-one .box-wrapper {
        width: 90%;
     }
