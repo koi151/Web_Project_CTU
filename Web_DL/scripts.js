@@ -80,14 +80,23 @@ function Keysearch() {
     }
   }
 
-// window.addEventListener("DOMContentLoaded", KeyWord);
-// window.onload = KeyWord;
-
-// $('phoneNum').click(function() {
-//     window.alert("Số điện thoại: 0285 398 9499");
-// });
-
 function phoneNum()
 {
     window.alert("Quý khách vui lòng liên hệ qua số điện thoại:  0285 398 9499");
+}
+
+var on = document.querySelector(".user-login");
+
+function loginActive()
+{
+    let t = document.querySelector(".gradient-custom");
+    t.classList.add("active");
+    console.log("Resgister form active");
+}
+
+function off()
+{
+    let t = document.querySelector(".gradient-custom");
+    t.classList.remove("active");
+    console.log("Resgister form inactive");
 }

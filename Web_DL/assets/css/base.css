@@ -254,3 +254,135 @@ iframe {
     width: 100vw;
 }
 /* <input type="checkbox" id="toggle"> */
+
+/* .gradient-custom {
+    background: #6a11cb;
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));    
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+} */
+
+button .fa-user {
+    color: var(--color-three);
+    position: fixed;
+    top: 13%;
+    right: 0px;
+    z-index: 99;
+    font-size: 20px;
+    background-color: #000;
+    padding: 14px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+button .fa-user:hover {
+    transform: scale(1.1);
+}
+
+.gradient-custom .card-body {
+    height: 33rem;
+}
+
+.gradient-custom .form-control {
+    font-size: 1.1rem;
+    background-color: var(--color-three);
+    border: none;
+    transition: all 0.4s;
+}
+
+.gradient-custom .form-outline {
+    margin-bottom: 0 !important;
+}
+
+.gradient-custom .small {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem !important;
+}
+
+.gradient-custom .card-body {
+    padding: 1.5rem 4rem !important;
+}
+
+.gradient-custom .btn {
+    padding: 0.3rem 2rem !important;
+    font-size: 1rem;
+}
+
+.gradient-custom .btn:hover {
+    background-color: var(--color-three);
+    color: var(--color-one);
+    border: none;
+}
+
+.gradient-custom .mb-md-5 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 1.2rem !important;
+}
+
+.gradient-custom a:hover {
+    color: var(--color-three) !important;
+}
+
+.gradient-custom .mb-0, .gradient-custom .fw-bold {
+    font-size: 0.9rem;
+}
+
+.gradient-custom .text-uppercase {
+    font-size: 1.4rem;
+    color: var(--color-three);
+}
+
+.gradient-custom {
+    position: fixed;
+    top: 15px;
+    left: 0;
+    right: 0;
+    z-index: 77;
+    display: none;
+}
+
+/* .gradient-custom .card {
+    transition: all 2s !important;
+} */
+
+.gradient-custom h2 {
+    margin-top: 1rem;
+}
+
+.gradient-custom .text-white-50 {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.active {
+    transition: all 2s !important;
+    display: block;
+}
+
+.fa-xmark {
+    position: absolute;
+    top: 11%;
+    left: 65.5%;
+    right: 0;
+    color: #bca405;
+    z-index: 78;
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.4s;
+}
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:  #f3f3f399  !important;
+    /* opacity: 1; Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #f3f3f399 !important;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color:  #f3f3f399  !important;
+}
