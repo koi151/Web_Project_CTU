@@ -11,8 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     var disTime = document.querySelector(".date");
     disTime.innerHTML = currentDate;
     console.log(disTime);
-
-    // GOOGLE TRANSLATE MODIFY 
 });
 
 // Remove .flex-20 for responsive
@@ -29,6 +27,7 @@ window.addEventListener('resize', function() {
     }
 });
 
+// Google translate
 function googleTranslateElementInit() {
     new google.translate.TranslateElement({
         pageLanguage: 'vi', 
@@ -40,7 +39,7 @@ function googleTranslateElementInit() {
     a.dispatchEvent(new Event('change'));
 }
 
-//ksndsdnvknskvsdnvksdv
+// Searching box
 function searchToggle(obj, evt){
     var container = $(obj).closest('.search-wrapper');
     if(!container.hasClass('active')){
@@ -72,12 +71,13 @@ function Keysearch() {
     }
   }
 
+// Alert phone number
 function phoneNum()
 {
     window.alert("Quý khách vui lòng liên hệ qua số điện thoại:  0285 398 9499");
 }
 
-
+// Display register form
 function loginActive()
 {
     let t = document.querySelector(".gradient-custom");
