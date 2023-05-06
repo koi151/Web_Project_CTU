@@ -203,3 +203,224 @@
 		width: auto;
 	}
 }
+/* Footer */
+footer .container .row a {
+    position: relative;
+}
+
+footer {
+    background-color: var(--color-two);
+    /* background-color: var(--color-seven); */
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .container .modify {
+    display: flex;
+    justify-content: center;
+}
+
+footer .col-md-6 .modify .main-logo {
+    border-radius: 10px;
+    width: 90px;
+    height: 110px;
+    box-shadow: -5px 5px 5px #9d946b;;
+    opacity: 0.5;
+    padding-left: 0;
+    transition: all 0.5s;
+
+}
+footer .col-md-6 .modify .main-logo:hover, .main-logo:active{
+    width: 110px;
+    height: 140px;
+}
+
+/* -----------------ss2----------------- */
+
+footer .col-lg-4 .ss-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .ss-2 h6 {
+    color: var(--color-three);
+    margin-bottom: 20px;
+}
+
+footer .container .row .ss-2 .reservation p{
+    color: white;
+    opacity: 0.7;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+footer .container .row .ss-2 .reservation p:hover{
+    color: var(--color-three);
+}
+
+/* khoang cach icon(phone, mail) va chu */
+footer .container .row .ss-2 .reservation p a{
+    color: white;
+}
+
+footer .container .row .ss-2 .reservation p a:hover{ 
+    color: #9d946b;
+    text-decoration: none;
+}
+
+footer .container .row .ss-2 .reservation i {
+    margin-right: 0.5rem;
+}
+
+
+/* ---------------------ss-3----------------------- */
+footer .container .row .ss-3{
+    padding-left: 4rem;
+}
+
+footer .container .row .ss-3 .payment{
+    height: 40px;
+    margin-right: 15px;
+    margin-top: 12px;
+    display: flex;
+    align-items: flex-start;
+}
+
+footer .container .row .ss-3 .payment-visa {
+    margin-top: 10px;
+    height: 40px;
+    width: 40%;
+}
+
+footer .container .row .ss-3 h6 {
+    color: var(--color-three);
+
+}
+
+/* ------------------ss-4------------------- */
+
+footer .ss-4 h6{
+    color: var(--color-three);
+} 
+
+footer .container .row .ss-4 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 5rem;
+}
+
+footer .container .row .ss-4 .support{
+    padding: 0;
+    list-style-type: none;
+    margin-top: 12px;
+
+}
+footer .container .row .ss-4 .support li a{
+    color: var(--color-one);
+    font-size: 14px;
+    opacity: 0.7;
+    text-decoration: none;
+}
+footer .container .row .ss-4 .support li a:hover, a:active{
+    color: var(--color-three);
+}
+/* ---------------------ss-5--------------------- */
+footer .container .row .ss-5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    text-align: center;
+    margin-bottom: 0.7rem;
+}
+footer .container .row .ss-5 .contact .social{
+    color: var(--color-three);
+    opacity: 1;
+    padding: 0rem 0.5rem;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    transition: all 0.5s;
+}
+footer .container .row .ss-5 .contact .social:hover, .social:active{
+    font-size: 35px;
+}
+
+footer .container .row .ss-5 .design{
+    color: var(--color-one);
+    opacity: 0.5;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 991px){
+    footer .col-md-6 .modify {
+        justify-content: flex-start;  
+        margin-left: 0.5rem;   
+    }
+
+    footer .container .row .ss-3 .payment-visa{
+        width: 80px;
+    }
+
+    footer .container .row .ss-3,footer .container .row .ss-4{
+        padding: 0 15px;
+        margin-top: 2rem;
+    }
+    footer .container .row .ss-3 h6,footer .container .row .ss-4 h6{
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px){
+    footer .col-md-6 .modify {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    footer .container .row .ss-2{
+        padding-top: 4rem;
+        margin: 0;
+        padding-left: 6rem;        
+    }
+    
+    
+     footer .container .row .ss-4{
+        margin: 0;
+        padding-top: 2rem;
+        padding-left: 6rem;        
+
+    }
+
+    footer .container .row .ss-3{
+        margin: 0;
+        padding-bottom: 2rem;   
+        padding-top: 3rem;
+        padding-left: 6rem;        
+
+    }
+
+    footer .container .row .ss-3 .payment-visa{
+        width: 70px;
+    }
+}
+
+@media (max-width: 576px){
+
+    footer .container .row .ss-2{
+        padding-left: 5rem;
+    }
+    
+    footer .container .row .ss-3, footer .container .row .ss-4{
+        padding-left: 5rem;
+    }
+}
