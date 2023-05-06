@@ -206,6 +206,7 @@
 /* Footer */
 footer .container .row a {
     position: relative;
+	background-color: #000;;
 }
 
 footer {
