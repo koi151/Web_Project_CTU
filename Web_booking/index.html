@@ -34,94 +34,92 @@
 		<div class="section-center">
 			<div class="container">
 				<div class="row">
-					<form action="http://www.w3schools.com/action_page.php" target="_blank">
-						<div class="booking-form">
-							<div class="form-header">
-								<h1>Đặt Phòng</h1>
-							</div>
-							<form>
-								<div class="form-group">
-									<input class="form-control" type="text" placeholder="Nhập họ và tên người đặt...">
-									<span class="form-label">Họ và tên</span>
-								</div>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group">
-											<input class="form-control" type="date" required>
-											<span class="form-label">Ngày đến</span>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<input class="form-control" type="date" required>
-											<span class="form-label"> Ngày đi</span>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-4">
-										<div class="form-group">
-											<select class="form-control" required>
-												<option value="" selected hidden>Loại phòng</option>
-												<option>Phòng tiêu chuẩn</option>
-												<option>Phòng VIP</option>
-												<option>Phòng trên cao</option>
-												<option>Phòng XL</option>
-											</select>
-											<span class="select-arrow"></span>
-											<span class="form-label">Chọn phòng</span>
-										</div>
-									</div>
-									<div class="col-md-4">
-										<div class="form-group">
-											<select class="form-control" required>
-												<option value="" selected hidden>
-													SL người lớn
-												</option>
-												<option>1</option>
-												<option>2</option>
-												<option>3</option>
-											</select>
-											<span class="select-arrow"></span>
-											<span class="form-label">Số lượng</span>
-										</div>
-									</div>
-									<div class="col-md-4">
-										<div class="form-group">
-											<select class="form-control" required>
-												<option value="" selected hidden>
-													SL trẻ em
-												</option>
-												<option>0</option>
-												<option>1</option>
-												<option>2</option>
-											</select>
-											<span class="select-arrow"></span>
-											<span class="form-label">Số lượng</span>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group">
-											<input class="form-control" type="email"
-												placeholder="Hãy nhập địa chỉ Email...">
-											<span class="form-label">Email</span>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<input class="form-control" type="tel" placeholder="Nhập số điên thoại">
-											<span class="form-label">Số điện thoại</span>
-										</div>
-									</div>
-								</div>
-								<div class="form-btn">
-									<button class="submit-btn">Đặt Phòng</button>
-								</div>
-							</form>
+					<div class="booking-form">
+						<div class="form-header">
+							<h1>Đặt Phòng</h1>
 						</div>
-					</form>
+						<form action="http://www.w3schools.com/action_page.php" target="_blank" method="post">
+							<div class="form-group">
+								<input class="form-control" type="text" placeholder="Nhập họ và tên người đặt...">
+								<span class="form-label">Họ và tên</span>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control" type="date" required>
+										<span class="form-label">Ngày đến</span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control" type="date" required>
+										<span class="form-label"> Ngày đi</span>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+										<select class="form-control" required>
+											<option value="" selected hidden>Loại phòng</option>
+											<option>Phòng tiêu chuẩn</option>
+											<option>Phòng VIP</option>
+											<option>Phòng trên cao</option>
+											<option>Phòng XL</option>
+										</select>
+										<span class="select-arrow"></span>
+										<span class="form-label">Chọn phòng</span>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<select class="form-control" required>
+											<option value="" selected hidden>
+												SL người lớn
+											</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+										</select>
+										<span class="select-arrow"></span>
+										<span class="form-label">Số lượng</span>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<select class="form-control" required>
+											<option value="" selected hidden>
+												SL trẻ em
+											</option>
+											<option>0</option>
+											<option>1</option>
+											<option>2</option>
+										</select>
+										<span class="select-arrow"></span>
+										<span class="form-label">Số lượng</span>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control" type="email"
+											placeholder="Hãy nhập địa chỉ Email...">
+										<span class="form-label">Email</span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control" type="tel" placeholder="Nhập số điên thoại">
+										<span class="form-label">Số điện thoại</span>
+									</div>
+								</div>
+							</div>
+							<div class="form-btn">
+								<button class="submit-btn">Đặt Phòng</button>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
