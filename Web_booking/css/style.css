@@ -206,16 +206,15 @@
 /* Footer */
 footer .container .row a {
     position: relative;
-	background-color: #000;;
 }
 
 footer {
-    background-color: var(--color-two);
-    /* background-color: var(--color-seven); */
+    background-color: #000;
     padding-top: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
+	z-index: 999;
 }
 footer .container .modify {
     display: flex;
@@ -246,7 +245,7 @@ footer .col-lg-4 .ss-2 {
 }
 
 footer .ss-2 h6 {
-    color: var(--color-three);
+    color: #9d946b;
     margin-bottom: 20px;
 }
 
@@ -258,7 +257,7 @@ footer .container .row .ss-2 .reservation p{
 }
 
 footer .container .row .ss-2 .reservation p:hover{
-    color: var(--color-three);
+    color: #9d946b;
 }
 
 /* khoang cach icon(phone, mail) va chu */
@@ -296,14 +295,14 @@ footer .container .row .ss-3 .payment-visa {
 }
 
 footer .container .row .ss-3 h6 {
-    color: var(--color-three);
+    color: #9d946b;
 
 }
 
 /* ------------------ss-4------------------- */
 
 footer .ss-4 h6{
-    color: var(--color-three);
+    color: #9d946b;
 } 
 
 footer .container .row .ss-4 {
@@ -321,13 +320,16 @@ footer .container .row .ss-4 .support{
 
 }
 footer .container .row .ss-4 .support li a{
-    color: var(--color-one);
+    color: #fff;
     font-size: 14px;
     opacity: 0.7;
     text-decoration: none;
 }
 footer .container .row .ss-4 .support li a:hover, a:active{
-    color: var(--color-three);
+    color: #9d946b;
+}
+footer .social {
+	color: #9d946b;
 }
 /* ---------------------ss-5--------------------- */
 footer .container .row .ss-5{
@@ -340,7 +342,7 @@ footer .container .row .ss-5{
     margin-bottom: 0.7rem;
 }
 footer .container .row .ss-5 .contact .social{
-    color: var(--color-three);
+    color: #9d946b;
     opacity: 1;
     padding: 0rem 0.5rem;
     text-decoration: none;
@@ -354,7 +356,7 @@ footer .container .row .ss-5 .contact .social:hover, .social:active{
 }
 
 footer .container .row .ss-5 .design{
-    color: var(--color-one);
+    color: #fff;
     opacity: 0.5;
     font-size: 14px;
     text-align: center;
